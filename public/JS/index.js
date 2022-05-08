@@ -13,7 +13,7 @@ weatherform.addEventListener('submit',(event)=>{
     messageOne.textContent= "Loading..."
     messageTwo.textContent=""
     const location= search.value        // value extracts the input value user entered
-    fetch('http://localhost:3000/weather?address='+ location ).then((response)=>{      //fetch data from this url and then run this function
+    fetch('/weather?address='+ location ).then((response)=>{      //fetch data from this url and then run this function
 
     
 

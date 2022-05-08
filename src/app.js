@@ -8,6 +8,7 @@ const forecast = require('./utils/forecast');
 
 
 const app = express()
+const port = process.env.PORT || 3000   // if the port from heroku doesnt work, we have set default or OR value as 3000, so the server will run on port 3000
 
 // console.log(__dirname);
 // console.log(path.join(__dirname, '../public'))   // This is how we get to know the path of the public folder. by combining the original directory path with the folder using path.join which is a function of path in npm module
@@ -111,8 +112,8 @@ app.get('*', (req, res)=>{
         pname : "Nikhil Sharma"
     })
 })
-app.listen(3000, ()=>{
-    console.log("server is up on port 3000")
+app.listen(port, ()=>{
+    console.log("server is up on port" + port)
 })
 
 
