@@ -11,7 +11,7 @@ const forecast= (longitude,latitude, callback)=>{
             callback("Unable to connect to weather service", undefined)
         }
         else{
-            callback(undefined, body.current.weather_descriptions[0]+ ', It is currently ' + body.current.temperature + ' degress out. There is a ' + body.current.precip + '% chance of rain.') 
+            callback(undefined, body.current.weather_descriptions[0]+ ', It is currently ' + body.current.temperature + ' degress out. There is a ' + body.current.precip + '% chance of rain.\n Humidity ='+ body.current.humidity) 
         }
     
     })
