@@ -1,7 +1,5 @@
 
 
-console.log("Client side of web server")
-
 
 const weatherform= document.querySelector('form')
 const search = document.querySelector('input')
